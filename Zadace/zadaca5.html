@@ -81,14 +81,38 @@
             grid-row: 2;
             height: 750px;
             position: relative;
-            
         }
-        @media (max-width:480px) {
-      body {
-        grid-template-columns: 1fr;
-      }
-    }
-  
+
+            @media (min-width: 480px;) and (max-width:480px) 
+            {
+            .container{
+            display: grid;
+            grid-column: 12;
+            grid-row: 12;
+            grid-template-columns: none;
+            gap: 10px;
+                }
+            .one{
+                display: grid;
+                grid-row: 1;
+                grid-column: 1/5;
+                width: 480px;
+            }
+            .two{
+                display: grid;
+                grid-row: 2;
+                grid-column: 1/4;
+                width: 480px
+            }
+            .three{
+                display: grid;
+                grid-row: 3;
+                grid-column: 4/5;
+                width: 480px
+            }
+            }
+
+        
     </style>
   </head>
   
