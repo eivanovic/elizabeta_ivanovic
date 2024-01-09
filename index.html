@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Moja web stranica</title>
 
     <!-- <style>
@@ -18,72 +19,348 @@
 </head>
 <body>
 
-    <div class="box1">Prvi dio</div>
-    <div class="box2">Drugi dio</div>
+    <html lang="en" data-bs-theme="light"><head><script src="/docs/5.3/assets/js/color-modes.js"></script>
 
-   <h1>Naslov 1</h1>
-   <h2>Naslov 2</h2>
-   <h3>Naslov 3</h3>
-   <h4>Naslov 4</h4>
-   <h5>Naslov 5</h5>
-   <h6>Naslov 6</h6>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.118.2">
+        <title><h1>Ovo je moja web stranica</h1></title>
+    
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/offcanvas-navbar/">
+    
+        
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    
+    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+        <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+    
+    
+        <style>
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+          }
+    
+          @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+            }
+          }
+    
+          .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+          }
+    
+          .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+          }
+    
+          .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+          }
+    
+          .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+          }
+    
+          .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+          }
+    
+          .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+          }
+    
+          .bd-mode-toggle {
+            z-index: 1500;
+          }
+    
+          .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+          }
+        </style>
+    
+        
+        <!-- Custom styles for this template -->
+        <link href="offcanvas-navbar.css" rel="stylesheet">
+      <style type="text/css" id="operaUserStyle"></style></head>
+      <body class="bg-body-tertiary">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+          </symbol>
+          <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+          </symbol>
+          <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+          </symbol>
+          <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </symbol>
+        </svg>
+    
+        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                Light
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                Dark
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                Auto
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+    
+        
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h1>Ovo je moja web stranica</h1></a>
+        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">O meni</a>
+            </li>
+            
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Zadaće</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">zadaća1</a></li>
+                <li><a class="dropdown-item" href="#">zadaća2</a></li>
+                <li><a class="dropdown-item" href="#">zadaća3</a></li>
+                <li><a class="dropdown-item" href="#">zadaća4</a></li>
+                <li><a class="dropdown-item" href="#">zadaća5</a></li>
+                <li><a class="dropdown-item" href="#">zadaća6</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    
+    <div class="nav-scroller bg-body shadow-sm">
+      <nav class="nav" aria-label="Secondary navigation">
+        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+        <a class="nav-link" href="#">
+          Friends
+          <span class="badge text-bg-light rounded-pill align-text-bottom">27</span>
+        </a>
+        <a class="nav-link" href="#">Explore</a>
+        <a class="nav-link" href="#">Suggestions</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+      </nav>
+    </div>
+    
+    <main class="container">
+      <div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm">
+        <img class="me-3" src="/docs/5.3/assets/brand/bootstrap-logo-white.svg" alt="" width="48" height="38">
+        <div class="lh-1">
+          <h1 class="h6 mb-0 text-white lh-1">Bootstrap</h1>
+          <small>Since 2011</small>
+        </div>
+      </div>
+    
+      <div class="my-3 p-3 bg-body rounded shadow-sm">
+        <h6 class="border-bottom pb-2 mb-0">Recent updates</h6>
+        <div class="d-flex text-body-secondary pt-3">
+          <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+          <p class="pb-3 mb-0 small lh-sm border-bottom">
+            <strong class="d-block text-gray-dark">@username</strong>
+            Some representative placeholder content, with some information about this user. Imagine this being some sort of status update, perhaps?
+          </p>
+        </div>
+        <div class="d-flex text-body-secondary pt-3">
+          <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e83e8c"></rect><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text></svg>
+          <p class="pb-3 mb-0 small lh-sm border-bottom">
+            <strong class="d-block text-gray-dark">@username</strong>
+            Some more representative placeholder content, related to this other user. Another status update, perhaps.
+          </p>
+        </div>
+        <div class="d-flex text-body-secondary pt-3">
+          <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#6f42c1"></rect><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text></svg>
+          <p class="pb-3 mb-0 small lh-sm border-bottom">
+            <strong class="d-block text-gray-dark">@username</strong>
+            This user also gets some representative placeholder content. Maybe they did something interesting, and you really want to highlight this in the recent updates.
+          </p>
+        </div>
+        <small class="d-block text-end mt-3">
+          <a href="#">All updates</a>
+        </small>
+      </div>
+    
+      <div class="my-3 p-3 bg-body rounded shadow-sm">
+        <h6 class="border-bottom pb-2 mb-0">Suggestions</h6>
+        <div class="d-flex text-body-secondary pt-3">
+          <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+          <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+            <div class="d-flex justify-content-between">
+              <strong class="text-gray-dark">Full Name</strong>
+              <a href="#">Follow</a>
+            </div>
+            <span class="d-block">@username</span>
+          </div>
+        </div>
+        <div class="d-flex text-body-secondary pt-3">
+          <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+          <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+            <div class="d-flex justify-content-between">
+              <strong class="text-gray-dark">Full Name</strong>
+              <a href="#">Follow</a>
+            </div>
+            <span class="d-block">@username</span>
+          </div>
+        </div>
+        <div class="d-flex text-body-secondary pt-3">
+          <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+          <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+            <div class="d-flex justify-content-between">
+              <strong class="text-gray-dark">Full Name</strong>
+              <a href="#">Follow</a>
+            </div>
+            <span class="d-block">@username</span>
+          </div>
+        </div>
+        <small class="d-block text-end mt-3">
+          <a href="#">All suggestions</a>
+        </small>
+      </div>
+    </main>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+        <script src="offcanvas-navbar.js"></script>
+    
+    </body></html>
+
+   <h1>Ovo je moja web stranica</h1>
+<hr><hr>
   <!-- Ovdje kreće paragraf --> 
-  <p class="paragraf1">Ovo je moj paragraf. </p>
-  <pre>
-    ovo je prvi red
-    ovo je drugi red
-    ovo je trći red
-  </pre>
+  <p class="paragraf1">O meni </p>
+  
   <p id="paragraf2">
-    Jučer smo igrali <strong>loše</strong>, jako <em>loše</em> to nije bilo <mark>prepoznatljivo</mark>. 
-    nakon dugo <del>vremena</del> imali smo utakmicu gdje smo svi bili loši. 
-    Ja ću preuzeti odgovornost na sebe jer očito taktički nisam dobro pripremio utakmicu... 
-    Teško je pao svima poraz, nismo naučili na ovakve stvari, 
-    podigli smo letvicu jako visoko i teško je to održati. 
-    ne kukam nikad nikad, nisam sklon ni tragediji ni euforiji. 
-    Žao mi je što izgubili u ovakvoj atmosferi. 
-    Žao mi je zbog tih ljudi, isprika svima njima - kazao je Dalić.
-  </p>
-<p>
-    Formula za teoriju relativnosti E=MC <sup>2</sup>
+    <pre>
+    zovem se <strong>Elizabeta</strong>
+    studiram u <mark>Slavonskom Brodu</mark> 
+    volim <em>nogomet, rukomet, vožnju biciklom</em> i druge aktivnosti iako se ni jednom ne bavim
+    </pre>  
 </p>
-<h2>Liste</h2>
-<p>Zemlje:</p>
+
+<h2>Zemlje koje bi voljela posjetiti:</h2>
+
 <ul>
-    <li>Hrvatska</li>
-    <li>Bosna</li>
-    <li>Slovenija</li>
-    <li>Crna Gora</li>
+    <li>Engleska</li>
+    <li>Francuska</li>
+    <li>Japan</li>
+    <li>Egipat</li>
+    <li>Australija</li>
+    <li>Novi Zeland</li>
+    <li>Maroko</li>
+    <li>Peru</li>
 </ul>
-<p>Zemlje u okruženju:</p>
-<ol type="1" reversed>
-    <li>Hrvatska</li>
-    <li>Slovenija</li>
-    <li>Bosna i Hercegovina</li>
-</ol>
-<p>Definition list</p>
+
+
 <dl>
     <dt>London</dt>
     <dd>-glavni grad Engleske</dd>
     <img src="slike/London.jpg" alt="Slika Londona" width="300" height="350">
+    <br><br>
     <dt>Pariz</dt>
     <dd>-glavni grad Francuske</dd>
     <img src="slike/Pariz.jpg" alt="Slika Pariza" width="350" height="250">
 </dl>
+<br><br>
+<h1>Koje bi ti zemlje volio/la posjetiti?</h1>
+<div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+    <label for="floatingTextarea">Napiši mi ovdje...</label>
+  </div>
+<br><br>
 
-<h3>URL slike</h3>
-<p>logo UNISB</p>
-<img src="https://www.unisb.hr/wp-content/uploads/design/logo_s_f.png" alt="logo UNISB">
+<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Agencija kojoj se možete obratiti:</h1>
+      <p class="lead"><p><a href="https://nomadik.travel" target="_blank">Nomadik travel</a> </p></p>
+      
+    </div>
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img src="data:image/png;base64,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" alt="Nomadik travel">
+    </div>
+  </div>
 
-<h2>Linkovi</h2>
-<p>Logo UNISB i link na <a href="https://www.unisb.hr/" target="_blank">UNISB</a> </p>
-<img src="https://www.unisb.hr/wp-content/uploads/design/logo_s_f.png" alt="logo UNISB">
-<p>Relativni linkovi</p>
-<ul>
-    <li><a href="link1.html">Link 1</a></li>
-    <li><a href="link2.html">Link 2</a></li>
-    <li><a href="link3.html">Link 3</a></li>
-</ul>
+
 <h3>Zadaće</h3>
 <ol>
     <li><a href="Zadace/zadaca1.html" target="_blank">zadaća</a></li>
